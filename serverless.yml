@@ -1,4 +1,4 @@
-org: joelcayllahua
+org: brunogarcial
 service: api-comentario
 
 provider:
@@ -7,7 +7,7 @@ provider:
   memorySize: 1024
   timeout: 20
   iam:
-    role: arn:aws:iam::791880057952:role/LabRole
+    role: arn:aws:iam::663025695161:role/LabRole
   environment:
     TABLE_NAME: ${sls:stage}-t_comentarios
     INGEST_BUCKET: ${self:service}-${sls:stage}-${aws:accountId}-ingesta
